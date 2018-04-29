@@ -75,6 +75,8 @@ class Menu
     end
   end
   
+  private
+  
   def create_station
   puts 'Введите имя станции:'
     name = gets.chomp
@@ -132,6 +134,7 @@ class Menu
   def wagons_with_index
     railway.wagons_with_index
   end
+  
   def add_interval_stations
     railway.routes_with_index
     puts 'Введите индекс № маршрута:'
