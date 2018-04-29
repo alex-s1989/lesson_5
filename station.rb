@@ -15,7 +15,7 @@ class Station
   end
   
   def self.all
-    @@stations.each {|station| puts "#{station.name}"}
+    @@stations
   end
   
   def arrival_train(train)

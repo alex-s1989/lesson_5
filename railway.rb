@@ -106,15 +106,20 @@ class Railway
   end
   
   def stations_with_index
+    puts "Количество станций: #{Station.count}"
     
     stations.each_with_index { |station, index| puts "№ #{index} - #{station}"}
   end
 
   def trains_with_index
+    puts "Количество поездов: #{(CargoTrain.count || 0) + (PassengerTrain.count || 0)}"
+    
     trains.each_with_index { |train, index| puts "№ #{index} - #{train}"}
   end
 
   def routes_with_index
+    puts "Количество маршрутов: #{Route.count}"
+    
     routes.each_with_index { |route, index| puts "№ #{index} - #{route}"}
   end
 

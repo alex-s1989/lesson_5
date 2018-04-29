@@ -3,7 +3,6 @@ require_relative 'instance_counter'
 
 class Train
   include ManufacturerCompany
-  include InstanceCounter
   
   @@all_trains = {}
 
